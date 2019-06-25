@@ -1,0 +1,7 @@
+# Log files
+
+*.log
+
+# IPython Notebooks checkpoints
+
+.ipynb_checkpoints/
