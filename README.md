@@ -28,3 +28,11 @@ The environment consists of a large squared place where bananas should be collec
 ### Goal
 
 The environment is considered solved when the agent gets an average score of *+13* over 100 consecutive episodes
+
+## Installation
+
+TODO
+
+## How to train the model 
+
+TODO
