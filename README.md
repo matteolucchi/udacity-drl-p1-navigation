@@ -31,7 +31,19 @@ The environment is considered solved when the agent gets an average score of *+1
 
 ## Installation
 
-TODO
+Follow the instructions below to install the software necessary to run the agent in the environment. 
+
+**1.** Set up the Python environment on your machine by following the [instructions in the DRLND GitHub repository](https://github.com/udacity/deep-reinforcement-learning#dependencies). 
+
+**2.** Download the Unity environment:
+- [Linux](https://s3-us-west-1.amazonaws.com/udacity-drlnd/P1/Banana/Banana_Linux.zip)
+- [Mac OSX](https://s3-us-west-1.amazonaws.com/udacity-drlnd/P1/Banana/Banana.app.zip)
+- [Windows 32-bit](https://s3-us-west-1.amazonaws.com/udacity-drlnd/P1/Banana/Banana_Windows_x86.zip)
+- [Windows 64-bit](https://s3-us-west-1.amazonaws.com/udacity-drlnd/P1/Banana/Banana_Windows_x86_64.zip)
+
+**3.** Place the unzipped folder just downloaded in the `p1_navigation/` folder in the DRLND GitHub repository.
+
+**4.** Clone [this repository](https://github.com/matteolucchi/udacity-drl-p1-navigation) in the `p1_navigation/` folder in the DRLND GitHub repository.
 
 ## How to train the model 
 
