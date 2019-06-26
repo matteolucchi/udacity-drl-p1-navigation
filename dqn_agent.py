@@ -24,16 +24,21 @@ class Agent():
                     batch_size = BATCH_SIZE, gamma = GAMMA, tau = TAU, lr = LR, \
                     update_every = UPDATE_EVERY):
         """Initialize an Agent object.
-        
+
         Params
         ======
             state_size (int): dimension of each state
             action_size (int): dimension of each action
             seed (int): random seed
         """
+        print('buff_s ' +str(buffer_size) + ' batch_s ' +str(batch_size) + ' gamma ' +str(gamma) \
+                + ' tau ' +str(tau)+ ' lr ' +str(lr) +' ue '+str(update_every))
         self.state_size = state_size
         self.action_size = action_size
         self.seed = random.seed(seed)
+        self.batch_size = batch_size
+        self.gamma = gamma
+        self.update_every = update_every
 
         # Q-Network
         self.qnetwork_local = QNetwork(state_size, action_size, seed).to(device)
@@ -50,16 +55,16 @@ class Agent():
         self.memory.add(state, action, reward, next_state, done)
 
         # Learn every update_every time steps.
-        self.t_step = (self.t_step + 1) % update_every
+        self.t_step = (self.t_step + 1) % self.update_every
         if self.t_step == 0:
             # If enough samples are available in memory, get random subset and learn
-            if len(self.memory) > batch_size:
+            if len(self.memory) > self.batch_size:
                 experiences = self.memory.sample()
-                self.learn(experiences, gamma)
+                self.learn(experiences, self.gamma)
 
     def act(self, state, eps=0.):
         """Returns actions for given state as per current policy.
-        
+
         Params
         ======
             state (array_like): current state
