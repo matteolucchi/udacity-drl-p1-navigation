@@ -19,6 +19,10 @@
 ## Performance of the trained agent
 The agent solved the environment, by obtaining an average score over 100 episodes higher than 13.0 , in a total of **433** episodes.
 
+**Trained agent**
+
+![trained_agent](https://user-images.githubusercontent.com/36470989/60196570-bb0b0780-983d-11e9-8e28-4e83a5a464af.gif)
+
 
 
 **Plot of the rewards obtained by the agent during the training**
