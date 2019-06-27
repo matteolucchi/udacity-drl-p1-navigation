@@ -2,6 +2,8 @@
 
 ## Descritpion of the learning algorithm
 
+The algorithm implemented to train the agent is [Deep Q-Learning](https://storage.googleapis.com/deepmind-media/dqn/DQNNaturePaper.pdf). The algorithm uses a replay memory from which it uniformely samples experiences used for learning.  
+
 #### Hyperparameters chosen
 
 - minibatch size: 64
@@ -15,6 +17,14 @@
 - exploration decay factor: 0.995
 
 #### Model Architecture
+
+1. The input to the neural network consists of a 37 x 1 vector including the agen velocities and the ray based perception in the agent's forward direction. 
+
+2. The first hidden layer is fully-connected and consists of 64 rectifier units.
+
+3. The second hidden layer is fully-connected and consists of 64 rectifier units.
+
+4. The output layer is a fully-connected linear layer with a single output for each of the 4 valid actions. 
 
 ## Performance of the trained agent
 The agent solved the environment, by obtaining an average score over 100 episodes higher than 13.0 , in a total of **433** episodes.
