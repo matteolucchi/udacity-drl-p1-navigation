@@ -45,6 +45,7 @@ Follow the instructions below to install the software necessary to run the agent
 
 **4.** Clone [this repository](https://github.com/matteolucchi/udacity-drl-p1-navigation) in the `p1_navigation/` folder in the DRLND GitHub repository.
 
-## How to train the model 
+## How to run the code
 
-TODO
+The agent can be tested and trained in the [Navigation.ipynp](https://github.com/matteolucchi/udacity-drl-p1-navigation/blob/master/Navigation.ipynb) python notebook. Following the instructions in the notebook it is possible to see our trained agent in action or to train a new agent using the hyperparameters of your choice and to see your agent in action. 
+
